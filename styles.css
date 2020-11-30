@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./imgs/download.png);
+  background-size: 100px 150px;
+}
+.calc {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+  width: 320px;
+  height: 490px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.calc-head {
+  background-color: #74f2d4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc-head input {
+  height: 30%;
+  width: 90%;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  text-align: right;
+}
+.calc-body {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.calc-title {
+  display: flex;
+  align-items: center;
+}
+.calc-title p {
+  font-size: 25px;
+  margin-left: 10px;
+}
+button {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 30px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calc-numbers {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calc-numbers button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  color: rgba(0,0,0,0.6);
+}
+.calc-numbers button:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+button[name="delete"] {
+  color: white;
+  background-color: rgba(255,0,0,0.9);
+  cursor: pointer;
+}
+button[name="delete"]:hover {
+  background-color: red;
+}
+button[name="equal"] {
+  color: white;
+  background-color: rgba(0,255,0,0.6);
+  cursor: pointer;
+}
+button[name="equal"]:hover {
+  background-color: rgba(0,255,0,0.8);
+}
